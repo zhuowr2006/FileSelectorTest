@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.improver.android.reader.ui.activity.FileSelectActivity" >
+
+    <item
+        android:id="@+id/action_fileselect_ok"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/action_fileselector_ok"
+        tools:ignore="AppCompatResource" />
+
+</menu>

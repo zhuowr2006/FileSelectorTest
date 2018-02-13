@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_layout_small" >
+
+    <ImageView
+        android:id="@+id/id_fileselect_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:minWidth="@dimen/fileselect_icon_minwidth"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_fileselect_folder" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/fileselect_item_minheight"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_layout_little" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3" >
+
+            <TextView
+                android:id="@+id/id_fileselect_filename"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/id_fileselect_childnum"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="#cccccc" />
+
+            <TextView
+                android:id="@+id/id_fileselect_createtime"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_layout_normal"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="#cccccc" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.szjzsoft.fileselector.InterceptLinearLayout
+        android:id="@+id/id_fileselect_fun_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="@dimen/padding_layout_normal" >
+
+        <CheckBox
+            android:id="@+id/id_fileselect_fun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:button="@drawable/checkbox_selector"
+            android:enabled="false"
+            android:focusable="false" />
+    </com.szjzsoft.fileselector.InterceptLinearLayout>
+
+</LinearLayout>
